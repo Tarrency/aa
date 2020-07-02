@@ -7,16 +7,18 @@
         <el-container>
             <el-header class="header"><!-- 顶部 -->
             <el-row>
-              <el-col :span="1" >
-                <i class="el-icon-s-fold"></i>
-                <el-button type="text" style="color:black;height:50px;"></el-button>
+              <el-col  :span="4" :offset="14">
+                <i class="el-icon-s-tools"></i>
+                <el-button @click="routerTo('/logs')"
+                type="text" style="color:black;height:50px">系统日志</el-button>
               </el-col>
-              <el-col  :span="4" :offset="16">
+         
+              <el-col  :span="4" :offset="0">
                 <i class="el-icon-s-tools"></i>
                 <el-button @click="routerTo('/userinfo')"
                 type="text" style="color:black;height:50px;">用户信息</el-button>
               </el-col>
-            </el-row>
+              </el-row>
             </el-header>
             <el-main><!-- 主内容区 -->
               <router-view></router-view>
@@ -47,6 +49,11 @@ export default {
   border-bottom:2px solid silver;
   background-color:#fff;
   text-align:right;  
+  vertical-align:top;
+}
+.el-button{
+  vertical-align: middle;
+  text-align:center;
 }
 .el-main {
   background-color:#fff;
