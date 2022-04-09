@@ -15,7 +15,7 @@
         "ie9-oninput-polyfill": "^1.1.1",
         "jwchat": "^0.2.41",
         "mockjs": "^1.1.0",
-        "moment": "^2.24.0",
+        "moment": "^2.29.2",
         "portfinder": "^1.0.21",
         "vue": "^2.6.11",
         "vue-axios": "^2.1.5",
